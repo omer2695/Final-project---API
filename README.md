@@ -55,6 +55,7 @@ Example JSON request:
   "publicParking": 1
 }
 ```
+
 | code  | meaning |
 | ------------- | ------------- |
 | 0  | not exist  |
