@@ -65,18 +65,25 @@ Example JSON request:
 }
 ```
 
-| score  | status |
+| prediction  | predictionStatus |
 | ------------- | ------------- |
 | 0  | bad  |
 | 1  | good  |
 | 2  | very good  |
 
 
+## Project Structure
+The project is structured as follows:
+
+- data_preprocessing.py: Module for loading and preprocessing the dataset.
+- model.py: Module for building and training the decision tree model.
+- Rest_Api.py: Main file for the REST API service using Flask.
+- main.py: Script to run the API service.
+- dataset.csv: Dataset file (if applicable).
+- requirements.txt: List of required Python packages.
 
 
 
-
-   
 
 
 
