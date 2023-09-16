@@ -19,8 +19,9 @@ def calculate_score():
         trained_model = model.train_decision_tree(df)
 
         prediction = model.predict_score(trained_model, areaCategory, Floor, Storage, publicTransport, publicParking)
-
-        return jsonify({'prediction': prediction.tolist()})
+        predictionStatus = "Bad" if prediction.tolist() == 0 else ("Good" if prediction.tolist() == 1 else "Very Good")
+        return jsonify({'prediction': prediction.tolist(),
+                       'status':predictionStatus})
     except Exception as e:
         return jsonify({'error': str(e)})
 
