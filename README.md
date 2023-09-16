@@ -15,27 +15,74 @@ I designed a REST API service that calculates potential scores for business prop
 
 ### Prerequisites
 
-List any software, libraries, or dependencies that need to be installed before running your project. For example:
+Before you begin, ensure you have met the following requirements:
 
-- Python 3.9
+- Python 3.6 or higher
 - Flask
-- Flask-RESTful
-- scikit-learn 
+- scikit-learn
 
 ### Installation
 
-Explain how to install your project. You can use bullet points or code blocks for clarity. For example:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/omer2695/Final-project---API.git
+To install and set up the project locally, follow these steps:
+   ```shell
+   git clone https://github.com/yourusername/business-property-scoring.git
    ```
 
-
-   1. Change to the project directory:
-   '''bash
-   cd workplace-optimization
+1. Navigate to the project directory:
+```shell
+   cd business-property-scoring
    ```
+2. Install the required dependencies:
+```shell
+   pip install -r requirements.txt
+```
+
+3. Run the API service:
+```shell
+   python main.py
+```
+
+## Usage
+To use the API service, send POST requests to the following endpoint:
+
+/predict: Endpoint for making predictions. Send a POST request with JSON data containing property information to receive a score prediction.
+Example JSON request:
+```shell
+{
+  "areaCategory": 1,
+  "Floor": 0,
+  "Storage": 0,
+  "publicTransport": 1,
+  "publicParking": 1
+}
+```
+
+## Example JSON response:
+
+```shell
+{
+  "prediction": 1
+}
+```
+
+| score  | status |
+| ------------- | ------------- |
+| 0  | bad  |
+| 1  | good  |
+| 2  | very good  |
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
 
    
