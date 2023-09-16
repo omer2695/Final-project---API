@@ -9,8 +9,7 @@ I designed a REST API service that calculates potential scores for business prop
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 
 ### Prerequisites
