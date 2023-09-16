@@ -1,8 +1,7 @@
 from flask import Flask
 from flask_restful import Api, Resource
 import json
-from wop_api import Prototype_Wop 
-# Import functions and classes from the wop_api package
+
 
 app = Flask(__name__)
 api = Api(app)
