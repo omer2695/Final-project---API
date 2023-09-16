@@ -14,8 +14,8 @@ def calculate_score():
         publicTransport = data_dict['publicTransport']
         publicParking = data_dict['publicParking']
 
-        df = data.load_data()
-        df = data.preprocess_data(df)
+        df = data_preprocessing.load_data()
+        df = data_preprocessing.preprocess_data(df)
         trained_model = model.train_decision_tree(df)
 
         prediction = model.predict_score(trained_model, areaCategory, Floor, Storage, publicTransport, publicParking)
